@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import linkedinurl from "/linkedin.png"
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { teammembers } from "../constants";
+import { teammembers as currentTeamMembers, newTeammembers } from "../constants";
 
 const TeamMemberCard = ({
   index,
@@ -56,6 +56,14 @@ const TeamMemberCard = ({
 );
 
 const Team = () => {
+  const [showNewTeam, setShowNewTeam] = useState(false);
+
+  const toggleTeamMembers = () => {
+    setShowNewTeam(!showNewTeam);
+  };
+
+  const teamMembersToShow = showNewTeam ? newTeammembers : currentTeamMembers;
+
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
       <div
@@ -67,9 +75,17 @@ const Team = () => {
         </motion.div>
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7 justify-center`}>
-        {teammembers.map((testimonial, index) => (
-          <TeamMemberCard key={testimonial.name} index={index} {...testimonial} />
+        {teamMembersToShow.map((teamMember, index) => (
+          <TeamMemberCard key={teamMember.name} index={index} {...teamMember} />
         ))}
+      </div>
+      <div className="text-center">
+        <button
+          className="text-primary text-lg underline cursor-pointer"
+          onClick={toggleTeamMembers}
+        >
+          {showNewTeam ? "Show Current Team" : "Show New Team"}
+        </button>
       </div>
     </div>
   );
