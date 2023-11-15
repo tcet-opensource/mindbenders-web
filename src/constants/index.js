@@ -48,10 +48,79 @@ const services = [
   },
 ];
 
-const teammembers = [
+const newteammembers = [
+  {
+    name: "Sharukhali Syed",
+    designation: "President.",
+    image: "team-member-23-1.png",
+    linkedin: "https://www.linkedin.com/in/sharukhali-farookali-naziyabegum-syed-2817bb272/",
+  },
+  {
+    name: "Shivsagar Mishra",
+    designation: "Vice-President",
+    image: "team-member-23-2.jpg",
+    linkedin: "http://www.linkedin.com/in/shivsagar-mishra/",
+  },
+  {
+    name: "Sakshi Maurya",
+    designation: "Secretary",
+    image: "team-member-23-3.jpg",
+    linkedin: "https://www.linkedin.com/in/sakshi-maurya-a495a7216/",
+  },
+  {
+    name: "Vrushali Sandam",
+    designation: "Technical Head",
+    image: "team-member-23-4.jpeg",
+    linkedin: "https://www.linkedin.com/in/vrushali-sandam-283054253/",
+  },
+  {
+    name: "Kanchan Singh",
+    designation: "Marketing Head",
+    image: "team-member-23-5.jpg",
+    linkedin: "https://www.linkedin.com/in/kanchan-singh-393a26280/",
+  },
+  {
+    name: "Saurabha Sawant",
+    designation: "Open Source Head",
+    image: "team-member-23-6.jpg",
+    linkedin: "https://www.linkedin.com/in/saurabha-sawant-3409bb25a/",
+  },
+
+  {
+    name: "Ankush Tiwari",
+    designation: "Event Manager",
+    image: "team-member-23-7.png",
+    linkedin: "https://www.linkedin.com/in/ankush-tiwari-1b50a9237/",
+  },
+  {
+    name: "Arya Mane",
+    designation: "Publication Head",
+    image: "team-member-23-8.jpg",
+    linkedin: "https://www.linkedin.com/in/arya-mane-555b0b256/",
+  },
+  {
+    name: "Sanket Karmakar",
+    designation: "Jt Publication Head",
+    image: "team-member-23-9.jpg",
+    linkedin: "https://www.linkedin.com/in/sanket-karmakar-9b02ab290/",
+  },
+  {
+    name: "Shivanshu Pasi",
+    designation: "Jt Technical Head",
+    image: "team-member-23-10.png",
+    linkedin: "https://www.linkedin.com/in/shivansu-pasi-367118218/",
+  },
+  {
+    name: "Ritika Lath",
+    designation: "Jt Marketing Head",
+    image: "team-member-23-11.png",
+    linkedin: "https://www.linkedin.com/in/ritika-lath-706500273/",
+  },
+];
+const oldteammembers = [
   {
     name: "Kunal Agrawal",
-    designation: "President",
+    designation: "President.",
     image: "team-member1.jpg",
     linkedin: "https://www.linkedin.com/in/kunalragrawal/",
   },
@@ -125,25 +194,25 @@ const teammembers = [
 
 const events = [
   {
-    name: "Git & GitHub Workshop",
-    description:
-      "For software developers, Git plays a very vital role in managing the codebase and collaborating with others. Our speaker Mr. Dhiraj Chauhan took a very hands-on workshop where participants were given an in-depth overview of Git. The session wrapped up with basic usage of GitHub by tasking participants to commit on First Contribution Board.",
-    tags: [
-      {
-        name: "git",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "github",
-        color: "green-text-gradient",
-      },
-      {
-        name: "firstcommit",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "mbc1.jpeg"
-  },
+  name: "Git & GitHub Workshop",
+  description:
+    "For software developers, Git plays a very vital role in managing the codebase and collaborating with others. Our speaker Mr. Dhiraj Chauhan took a very hands-on workshop where participants were given an in-depth overview of Git. The session wrapped up with basic usage of GitHub by tasking participants to commit on First Contribution Board.",
+  tags: [
+    {
+      name: "git",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "github",
+      color: "green-text-gradient",
+    },
+    {
+      name: "firstcommit",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: "mbc1.jpeg"
+},
   {
     name: "CP Workshop",
     description:
@@ -304,6 +373,48 @@ const events = [
     ],
     image: "mbc9.jpeg"
   },
+  {
+    
+    name: "Resume Building Workshop",
+    description:
+      "Workshop was conducted by Mr. Shubham Shah (Research intern @IIT Patna).Students successfully learned about enhancing resume format, emphasizing open-source contributions, highlighting ICPC involvement, and implementing the Harvard keyword approach. These elements shall empower students to create impactful resumes that showcase their skills and experiences effectively, increasing their competitiveness in the job market.",
+    tags: [
+      {
+        name: "resume",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "competition",
+        color: "green-text-gradient",
+      },
+      {
+        name: "job search",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "mbc10.jpeg"
+  },
+  {
+    
+    name: "Git & GitHub Workshop",
+    description:
+      "For software developers, Git plays a very vital role in managing the codebase and collaborating with others. Our speaker Mr. Dhiraj Chauhan took a very hands-on workshop where participants were given an in-depth overview of Git. The session wrapped up with basic usage of GitHub by tasking participants to commit on First Contribution Board.",
+    tags: [
+      {
+        name: "git",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "github",
+        color: "green-text-gradient",
+      },
+      {
+        name: "firstcommit",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "mbc11.jpeg"
+  },
 ];
 
-export { services, teammembers, events };
+export { services, newteammembers,oldteammembers, events };

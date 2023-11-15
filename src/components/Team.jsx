@@ -5,7 +5,7 @@ import linkedinurl from "/linkedin.png"
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { teammembers } from "../constants";
+import { newteammembers,oldteammembers } from "../constants";
 
 const TeamMemberCard = ({
   index,
@@ -55,24 +55,55 @@ const TeamMemberCard = ({
   </motion.div>
 );
 
+
 const Team = () => {
+  const [currentTeam, setCurrentTeam] = React.useState(newteammembers);
+  const [teamTitle, setTeamTitle] = React.useState('Year 23-24');
+
+  const handleSelect = (event) => {
+    switch (event.target.value) {
+      case '22':
+        setCurrentTeam(oldteammembers);
+        setTeamTitle('Year 22-23');
+        break;
+      case '23':
+        setCurrentTeam(newteammembers);
+        setTeamTitle('Year 23-24');
+        break;
+      /*case '24':
+        setCurrentTeam(team24);
+        setTeamTitle('Year 24-25');
+        break;
+      default:
+        setCurrentTeam(team22);
+        setTeamTitle('Year 22-23');
+        */
+    }
+  };
+
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
-      <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
-      >
-        <motion.div variants={textVariant()}>
+      <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}>
+        <motion.div variants={textVariant()} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <p className={styles.sectionSubText}>Our Team</p>
-          <h2 className={styles.sectionHeadText}>Team Members.</h2>
+          <br />
+          <p className={styles.sectionSubText}>{teamTitle}</p>
+          <br />
+          <select onChange={handleSelect}>
+            <option value="23">Year 23-24</option>
+            <option value="22">Year 22-23</option>
+            
+          </select>
         </motion.div>
-      </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7 justify-center`}>
-        {teammembers.map((testimonial, index) => (
-          <TeamMemberCard key={testimonial.name} index={index} {...testimonial} />
-        ))}
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7 justify-center`}>
+          {currentTeam.map((member, index) => (
+            <TeamMemberCard key={member.name} index={index} {...member} />
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
-export default SectionWrapper(Team, "team");
+export default Team;
