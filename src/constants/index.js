@@ -64,7 +64,7 @@ const newteammembers = [
   {
     name: "Sakshi Maurya",
     designation: "Secretary",
-    image: "team-member-23-3.jpg",
+    image: "team-member-23-2.jpg",
     linkedin: "https://www.linkedin.com/in/sakshi-maurya-a495a7216/",
   },
   {
