@@ -58,7 +58,7 @@ const newteammembers = [
   {
     name: "Shivsagar Mishra",
     designation: "Vice-President",
-    image: "team-member-23-2.jpg",
+    image: "team-member-23-3.jpg",
     linkedin: "http://www.linkedin.com/in/shivsagar-mishra/",
   },
   {
