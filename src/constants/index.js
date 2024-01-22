@@ -415,6 +415,26 @@ const events = [
     ],
     image: "mbc11.jpeg"
   },
+  {
+    name: "Building End to End ML Project",
+    description:
+      "Our speaker Ishan Shrivastava conducted a captivating webinar on this topic. Participants learned how to apply theoretical knowledge and practical tools to create impactful ML solutions. The session was a mix of lectures and hands-on exercises, ensuring participants gained valuable insights and experience in the complex field of machine learning along with deployment",
+    tags: [
+      {
+        name: "streamlit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "kaggle",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ML-Ops",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "mbc12.jpg"
+  },
 ];
 
 export { services, newteammembers,oldteammembers, events };
