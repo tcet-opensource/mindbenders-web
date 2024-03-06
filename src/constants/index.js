@@ -56,10 +56,10 @@ const newteammembers = [
     linkedin: "https://www.linkedin.com/in/sharukhali-farookali-naziyabegum-syed-2817bb272/",
   },
   {
-    name: "Shivsagar Mishra",
+    name: "Siddhant Shedge",
     designation: "Vice-President",
     image: "team-member-23-2.jpg",
-    linkedin: "http://www.linkedin.com/in/shivsagar-mishra/",
+    linkedin: "http://www.linkedin.com/in/siddhantshedge",
   },
   {
     name: "Sakshi Maurya",
