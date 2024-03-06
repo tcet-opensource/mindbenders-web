@@ -76,7 +76,7 @@ const newteammembers = [
   {
     name: "Kanchan Singh",
     designation: "Marketing Head",
-    image: "team-member-23-5.jpg",
+    image: "team-member-23-5.png",
     linkedin: "https://www.linkedin.com/in/kanchan-singh-393a26280/",
   },
   {
