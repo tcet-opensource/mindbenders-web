@@ -51,7 +51,7 @@ const services = [
 const newteammembers = [
   {
     name: "Sharukhali Syed",
-    designation: "President.",
+    designation: "President",
     image: "team-member-23-1.png",
     linkedin: "https://www.linkedin.com/in/sharukhali-farookali-naziyabegum-syed-2817bb272/",
   },
