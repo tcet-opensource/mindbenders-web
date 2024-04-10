@@ -62,6 +62,12 @@ const newteammembers = [
     linkedin: "http://www.linkedin.com/in/siddhantshedge",
   },
   {
+    name: "Shivsagar Mishra",
+    designation: "Vice-President",
+    image: "team-member-23-2-1.jpg",
+    linkedin: "https://www.linkedin.com/in/shivsagar-mishra",
+  },
+  {
     name: "Sakshi Maurya",
     designation: "Secretary",
     image: "team-member-23-3.jpg",
@@ -434,6 +440,30 @@ const events = [
       },
     ],
     image: "mbc12.jpg"
+  },
+  {
+    name: "Relational Networks in Machine Learning",
+    description:
+      "Participants explored relational reasoning in ML, focusing on innovative solutions like RN architecture & utilization of datasets like CLEVR. Attendees gained insights into the challenges in relational reasoning tasks and limitations of traditional approaches. Emphasis on Visual Question Answering highlighted importance of flexible relational reasoning within neural networks.",
+    tags: [
+      {
+        name: "Relational reasoning",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "neural networks",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Visual Question Answering",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "CLEVR",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "mbc13.jpg"
   },
 ];
 
