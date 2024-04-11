@@ -1,4 +1,4 @@
-# Mindbenders Club | Thakur College of Engineering and Technology
+# Mind Benders Club | Thakur College of Engineering and Technology
 
 ![Organization logo](./assets/img/header.png)
 
@@ -19,4 +19,4 @@ The club also maintans a monthly blog titled _This Month in AI_ for students to 
 
 You can contact us for more information about the organizations and be up to date about all of our upcoming events and latest blogs.
 
-[Mindbenders website](https://mbc.tcetmumbai.in/)
+[Mind Benders website](https://mbc.tcetmumbai.in/)
