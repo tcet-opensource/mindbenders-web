@@ -1,4 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
+# Added a comment to force cache refresh
 name: Deploy static content to Pages
 
 on:
