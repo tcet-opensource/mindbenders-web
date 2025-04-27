@@ -47,7 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] leading-[30px]'
       >
-        The Mind Benders Club is a student's club at Thakur College of Engineering & Technology for individuals 
+        The Mind Benders Club is student's club at Thakur College of Engineering & Technology for individuals 
         who are passionate about Artificial Intelligence, Data Science, Machine Learning, and other cutting-edge technologies. The club is 
         dedicated to providing a platform for like-minded individuals to come together, share knowledge, and collaborate 
         on projects.
